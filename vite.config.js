@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Portfolio/', // <--- Changed to capital 'P' to match your repo
+  base: './', // <--- The DOT (.) is the fix. It makes paths relative.
 })
