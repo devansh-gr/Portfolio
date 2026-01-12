@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from 'react';
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
@@ -12,11 +11,9 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        {/* Primary Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        
-        {/* SAFETY NET: If the URL is weird (case mismatch, index.html, etc), go Home */}
+        {/* Redirect unknown routes to Home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AnimatePresence>
@@ -25,7 +22,7 @@ const AnimatedRoutes = () => {
 
 function App() {
   return (
-    // Automatically uses the base path defined in vite.config.js
+    /* REMOVED: basename="/Portfolio" */
     <BrowserRouter>
       <div className="container">
         <Navbar />
