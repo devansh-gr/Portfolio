@@ -26,7 +26,7 @@ const AnimatedRoutes = () => {
 function App() {
   return (
     // Automatically uses the base path defined in vite.config.js
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter>
       <div className="container">
         <Navbar />
         <AnimatedRoutes />
