@@ -1,0 +1,61 @@
+/* src/pages/Projects.module.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 4rem; /* Space at bottom for scroll */
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-top: -1rem; /* Pull closer to title */
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem; /* Generous spacing between projects */
+}
+
+.projectItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: default;
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.projectItem:hover .title {
+  color: var(--accent-color);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 60ch;
+  line-height: 1.6;
+}
+
+.techStack {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  opacity: 0.6;
+  margin-top: 0.5rem;
+  font-style: italic;
+}

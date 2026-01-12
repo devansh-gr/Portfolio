@@ -1,0 +1,33 @@
+/* src/pages/About.module.css */
+.container {
+  max-width: 600px; /* Tighter focus for text */
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Air between thoughts */
+}
+
+.textBlock {
+  font-size: 1.1rem;
+  color: var(--text-muted); /* Slightly softer than pure white */
+  line-height: 1.8;
+}
+
+/* First paragraph stands out */
+.textBlock:first-of-type {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+}
+
+.highlight {
+  color: var(--accent-color);
+  font-style: italic;
+}

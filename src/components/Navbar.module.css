@@ -1,0 +1,33 @@
+/* src/components/Navbar.module.css */
+.nav {
+  display: flex;
+  justify-content: flex-end; /* Aligns links to the right (editorial style) */
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+
+.linkList {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.link {
+  font-size: 0.9rem;
+  text-transform: lowercase; /* Stylistic choice for minimalism */
+  opacity: 0.7;
+  transition: opacity 0.2s ease, color 0.2s ease;
+  position: relative;
+}
+
+/* Active/Hover states handled by global CSS, but we add specificity here */
+.link:hover {
+  opacity: 1;
+  color: var(--accent-color);
+}
+
+.activeLink {
+  opacity: 1;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--accent-color);
+}
