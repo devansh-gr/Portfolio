@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
@@ -21,7 +20,7 @@ const AnimatedRoutes = () => {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio"> {/* Added basename for GitHub Pages */}
       <div className="container">
         <Navbar />
         <AnimatedRoutes />
