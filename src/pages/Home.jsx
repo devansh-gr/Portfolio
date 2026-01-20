@@ -12,6 +12,13 @@ const PROJECTS = [
   },
   {
     id: 2,
+    title: 'Hawking.AI',
+    description: 'Developed a Neuro-linguistic interface translating brain signals into text using large language models.',
+    tech: 'Python, OpenBCI, Gemini 2.0 Flash API'
+
+  },
+  {
+    id: 2,
     title: '6-DOF Robotic Manipulator',
     description: 'Designed and programmed a 6-axis arm with custom Inverse Kinematics and closed-loop control.',
     tech: 'C++, SolidWorks, IK Algorithms'
@@ -33,6 +40,8 @@ const PROJECTS = [
     title: 'Solar Efficiency Analysis',
     description: 'Modeled thermal regulation and irradiance efficiency across 10+ years of climate data.',
     tech: 'Python, MATLAB, Pandas'
+
+    
   }
 ];
 
